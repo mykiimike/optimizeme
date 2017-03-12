@@ -1,7 +1,7 @@
 {
   "name": "optimizeme",
   "description": "Optimize your NodeJS/NPM installation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/mykiimike/optimizeme",
   "author": "Michael Vergoz",
   "main" : "index.js",
