@@ -376,13 +376,12 @@ function starter(end) {
  *
  * NodeJS command
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-function nodejs(end) {
+function nodejs() {
 
   followLeaf('/usr/lib/nodejs', (filename) => {
     if(!filename) {
       console.debug('Scan done');
       starter(() => {
-        if(end) end();
         console.pretty(result);
       });
       return;
@@ -402,7 +401,6 @@ function npm(end) {
     if(!filename) {
       console.debug('Scan done');
       starter(() => {
-        if(end) end();
         console.pretty(result);
       });
       return;
@@ -418,9 +416,8 @@ function npm(end) {
  * nodejs/NPM command
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 function all() {
-  nodejs(() => {
-      npm();
-  });
+  nodejs();
+  npm();
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
