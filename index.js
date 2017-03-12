@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 const EventEmitter = require('events');
 const fs = require('fs');
 const crypto = require('crypto');
